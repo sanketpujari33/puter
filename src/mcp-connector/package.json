@@ -6,8 +6,8 @@
   "private": true,
   "main": "dist/workerPreamble.js",
   "scripts": {
-    "build": "webpack --config webpack.config.cjs --mode production && node ./scripts/buildPreamble.mjs",
-    "dev": "npm run build && wrangler dev",
+    "build": "node init && webpack --config webpack.config.cjs --mode production && node ./scripts/buildPreamble.mjs",
+    "dev": "node init && npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
     "pack:mcpb": "npx -y @anthropic-ai/mcpb@latest pack mcpb puter-mcp-connector.mcpb"
   },

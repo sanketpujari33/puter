@@ -5,7 +5,7 @@
   "description": "Worker preamble builder for Puter",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.cjs --mode production && node ./scripts/buildPreamble.mjs"
+    "build": "node init && webpack --config webpack.config.cjs --mode production && node ./scripts/buildPreamble.mjs"
   },
   "devDependencies": {
     "terser-webpack-plugin": "^5.3.14",
