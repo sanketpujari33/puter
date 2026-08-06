@@ -29,10 +29,10 @@
   },
   "scripts": {
     "test": "mocha ./test/**/*.test.js",
-    "start:gui": "nodemon --exec \"node dev-server.js\" ",
-    "build": "node ./build.js",
+    "start:gui": "node init && nodemon --exec \"node dev-server.js\" ",
+    "build": "node init && node ./build.js",
     "check-translations": "node tools/check-translations.js",
-    "start-webpack": "webpack --watch --devtool source-map --stats=errors-only"
+    "start-webpack": "node init && webpack --watch --devtool source-map --stats=errors-only"
   },
   "workspaces": [
     "src/*"

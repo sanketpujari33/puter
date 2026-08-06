@@ -13,13 +13,11 @@ license-header.txt
 dist/
 
 # VS Code IDE
-.vscode/**/*
 !.vscode/extensions.json
 !.vscode/launch.json
 !.vscode/tasks.json
 
 # Local env files
-.env
 !.env.example
 
 # Per-developer / deployment config override. `config.default.json` ships in
@@ -39,7 +37,6 @@ src/emulator/release/
 # vscode
 # ======================================================================
 # vscode configuration
-.vscode/
 
 # JS language server, ref: https://code.visualstudio.com/docs/languages/jsconfig
 jsconfig.json
@@ -72,3 +69,4 @@ servers.json
 config.*.json
 
 volatile/
+config.bat
